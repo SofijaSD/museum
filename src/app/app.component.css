@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
+*{
+    background-image: url('/assets/images/pozadina6.jpg');
+}
+
+/*nav*/
+
+.container-fluid{
+	margin-bottom: 10px;
+	margin-right: 40px;
+	margin-left:40px;
+}
+.navbar-nav .nav-link
+{
+    color: white;
+    
+}
+.navbar-nav .nav-link.active-link
+{
+    color: white;
+    text-decoration: none;
+    
+}
+
+

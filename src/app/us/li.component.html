@@ -1,0 +1,105 @@
+<mat-tab-group  >
+
+
+    <mat-tab label="Planer">
+        <div style="background-image: url('/assets/images/11.jpg/'); width: auto;">
+            <div class="py-12">
+                <div class="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg md:max-w-5xl" style="background-color: rgba(250, 240, 240, 0.6)">
+                    <div class="md:flex ">
+                        <div class="w-full p-4 px-5 py-5">
+                            <div class="md:grid md:grid-cols-3 gap-2 ">
+                                <div class="col-span-2 p-5">
+                                    <h1 class="text-xl font-medium " >Tekući obilasci..</h1>
+                                    <div class="flex justify-between items-center mt-6 pt-6" *ngFor="let o of obilasci" >
+                                        <div class="flex items-center"> 
+                                            <div class="flex flex-col ml-3"> <span class="md:text-md font-medium">{{o.naziv}}</span> <span class="text-xs font-light text-black-400">{{o.status}}</span> </div>
+                                        </div>
+                                        <div class="flex justify-center items-center">
+                                            <div class="pr-8 "> <span class="text-xs font-medium"></span> </div>
+
+                                            <div class="pr-8 flex "> <button style="background-color:white;color: black;" (click)="detaljiObilaska(o)"
+                                                class="btn">
+                                                Detalji
+                                            </button> </div>
+                                            <div> <button style="background-color:green; color:black;" (click)="zavrsiObilazak(o)"
+                                                class="btn">
+                                                Završi
+                                            </button></div> <br>
+                                            <div (click)="deleteObilazak(o)" > <i style="  cursor: pointer;color: red; margin: 20px;" class="fa fa-close text-xl font-large"></i> </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between items-center mt-6 pt-6 border-t">
+                                        <div class="flex items-center" style="color:black;"><i class="fa fa-arrow-left text-sm pr-2"></i><a href="sve-postavke/{{user.id}}"> Nazad na postavke</a> </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </mat-tab>
+
+
+    <mat-tab label="Istorija obilazaka">
+        <div  style="background-image: url('/assets/images/11.jpg/');">
+            <div class="py-12">
+                <div class="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg md:max-w-5xl" style="background-color: rgba(250, 240, 240, 0.6)">
+                    <div class="md:flex ">
+                        <div class="w-full p-4 px-5 py-5">
+                            <div class="md:grid md:grid-cols-3 gap-2 ">
+                                <div class="col-span-2 p-5">
+                                    <h1 class="text-xl font-medium " >Završeni obilasci..</h1>
+                                    <div class="flex justify-between items-center mt-6 pt-6" *ngFor="let o of obilasciZavrseni" >
+                                        <div class="flex items-center"> 
+                                            <div class="flex flex-col ml-3"> <span class="md:text-md font-medium">{{o.naziv}}</span> <span class="text-xs font-light text-black-400">{{o.status}}</span> </div>
+                                        </div>
+                                        <div class="flex justify-center items-center">
+                                            <div class="pr-8 "> <span class="text-xs font-medium"></span> </div>
+
+                                            <div class="pr-8 flex "> <button style="background-color:white;color: black;" (click)="detaljiObilaska(o)"
+                                                class="btn">
+                                                Detalji
+                                            </button> </div>
+    
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between items-center mt-6 pt-6 border-t">
+                                        <div class="flex items-center" style="color:black;"><i class="fa fa-arrow-left text-sm pr-2"></i><a href="sve-postavke/{{user.id}}"> Nazad na postavke</a> </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </mat-tab>
+
+
+  
+    <!-- if ime kao bilo koje ime eksponata iz izlozbe1 onda ruta na izlozbu1 -->
+
+</mat-tab-group>
+
+<div class="footer-dark" style="text-align: center;" >
+    <div class="container1" style="margin:0 auto; border-radius: 5px; width:20%; padding:10px">
+      <div class="row1">
+        <div class="col item social"><a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a><a href="#">
+                <i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a>
+            </div>
+      </div>
+      <p class="copyright" style="color: black;"><b>Sofija Dimitrijevic  | © 2022 </b></p>
+    </div>
+  
+  </div>
+
