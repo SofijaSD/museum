@@ -1,4 +1,5 @@
 This application is a virtual tour guide to museums whose themes are exhibits and technology settings. It offers the following set of functionalities:
+
      • Visitor login and registration
      • Overview of existing museum settings and their exhibits
      • Add desired exhibits to the tour planner
