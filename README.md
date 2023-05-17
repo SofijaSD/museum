@@ -2,7 +2,7 @@ This application is a virtual tour guide to museums whose themes are exhibits an
      • Visitor login and registration
      • Overview of existing museum settings and their exhibits
      • Add desired exhibits to the tour planner
-     • Create and modify tours from the planner
+     • Create and modify tours from the planner 
      • Cancellation of scheduled tours
      • Remove canceled tours from the planner
      • Edit the user profile, which includes records of favorite types of settings and exhibits
